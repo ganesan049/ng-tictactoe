@@ -21,9 +21,11 @@
             "aot": true,
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              "src/manifest.webmanifest"
             ],
             "styles": [
+              "./node_modules/@nebular/theme/styles/prebuilt/cosmic.css",
               "src/styles.css"
             ],
             "scripts": []
@@ -55,7 +57,9 @@
                   "maximumWarning": "6kb",
                   "maximumError": "10kb"
                 }
-              ]
+              ],
+              "serviceWorker": true,
+              "ngswConfigPath": "ngsw-config.json"
             }
           }
         },
@@ -85,7 +89,8 @@
             "karmaConfig": "karma.conf.js",
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              "src/manifest.webmanifest"
             ],
             "styles": [
               "src/styles.css"
@@ -119,6 +124,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "tic-tak-toe"
+    }
+  },
+  "defaultProject": "tic-tak-toe",
+  "cli": {
+    "analytics": "e3aa7394-2eba-4495-a2d7-446d988efa23"
+  }
 }
