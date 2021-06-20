@@ -1,5 +1,7 @@
 <h1 *ngIf="!winner">Current Player : {{player}}</h1>
-<button *ngIf="winner" nbButton outline status (click)="newGame()">Start New Game</button>
+<input type="text" appRainbow>
+<button nbButton outline status appHoldable (holdTime)="holdTime($event)">Holdable</button>
+<button *ngIf="winner" nbButton outline status appHoldable (click)="newGame()">Start New Game</button>
 <h2 *ngIf="winner">
   Player {{winner}} won the game!
 </h2>

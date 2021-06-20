@@ -10,12 +10,16 @@ import { NbThemeModule, NbLayoutModule } from '@nebular/theme';
 import { NbEvaIconsModule } from '@nebular/eva-icons';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
+import { HoldableDirective } from './holdable.directive';
+import { RainbowDirective } from './rainbow.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
     SquareComponent,
-    BoardComponent
+    BoardComponent,
+    HoldableDirective,
+    RainbowDirective
   ],
   imports: [
     BrowserModule,

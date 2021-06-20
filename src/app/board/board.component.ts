@@ -13,6 +13,13 @@ export class BoardComponent implements OnInit {
 
   constructor() { }
 
+  holdTime(e){
+    console.log(e);
+    if(e >= 1000){
+      console.log('deleted');
+    }
+  }
+
   ngOnInit(): void {
     this.newGame();
   }
